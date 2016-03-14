@@ -6,5 +6,7 @@
         <page name='A Very Big Sum'/>
         <page name='Plus Minus'/>
         <page name='Diagonal Difference'/>
+        <page name='Staircase'/>
+        <page name='Angry Professor'/>
     </pages>
 </playground>
