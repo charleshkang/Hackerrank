@@ -1,2 +1,1 @@
-# Hackerrank
-personal hackerank progression 
+### Personal Hackerrank progression! 
