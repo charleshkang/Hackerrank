@@ -9,5 +9,7 @@
         <page name='Staircase'/>
         <page name='Angry Professor'/>
         <page name='Alternating Characters'/>
+        <page name='Extra Long Factorials'/>
+        <page name='Pangram'/>
     </pages>
 </playground>
