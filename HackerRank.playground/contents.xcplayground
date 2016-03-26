@@ -11,5 +11,6 @@
         <page name='Alternating Characters'/>
         <page name='Extra Long Factorials'/>
         <page name='Pangram'/>
+        <page name='Palindrome'/>
     </pages>
 </playground>
