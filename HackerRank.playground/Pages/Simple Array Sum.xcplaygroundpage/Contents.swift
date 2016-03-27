@@ -16,7 +16,6 @@ for (var i = 0; i < n; i++) {
     
     sum += Int(arr[i])!
     
-    
     // loop through each value in the array, and for each value add it to the current sum
 }
 
