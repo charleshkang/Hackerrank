@@ -16,5 +16,6 @@
         <page name='Time Conversion'/>
         <page name='Intro to Tutorial Challenges'/>
         <page name='Insertion Sort'/>
+        <page name='Cut the Sticks'/>
     </pages>
 </playground>
