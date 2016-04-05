@@ -2,29 +2,36 @@
 
 import Foundation
 
-var n = Int(readLine()!)!
-var sticks = readLine()!.characters.split(" ").map({Int(String($0)) ?? 0})
-
-
-
-var currentSmallestStick = sticks.minElement()!
-
-// create var i to loop through ints, then subtract each element by the minInt
-func cutSticks(var sticks:[Int], smallestStick:Int) -> [Int] {
-    for (index,_) in sticks.enumerate() {
-        var cutCounter = 0
-        sticks[index] = sticks[index] - currentSmallestStick
-        for (i,_) in sticks.enumerate().reverse() {
-            if (sticks[i] == 0) {
-                sticks.removeAtIndex(i)
-            }
-            cutCounter++
+// smallest non-zero num loop
+func minimum(sticks:[Int]) -> Int
+{
+    var smallestStickSoFar = sticks[0]
+    
+    for stick in sticks {
+        if (stick > 0) {
+            smallestStickSoFar = stick
         }
-        print(sticks)
-        print(cutCounter)
     }
-    return sticks
+    
+    for stick in sticks {
+        if (stick > 0 && stick < smallestStickSoFar) {
+            smallestStickSoFar = stick
+        }
+    }
+    return smallestStickSoFar
 }
 
+var n = 6
+var sticks = [5, 4, 4, 2, 2, 8]
 
-print(cutSticks(sticks, smallestStick:currentSmallestStick))
+while sticks.maxElement() != 0 {
+    var currentSmallestStick = minimum(sticks)
+    var cutCounter = 0
+    for (index,item) in sticks.enumerate() {
+        if sticks[index] != 0  {
+            sticks[index] = sticks[index] - currentSmallestStick
+            cutCounter += 1
+        }
+    }
+    print(cutCounter)
+}

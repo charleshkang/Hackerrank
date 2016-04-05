@@ -17,5 +17,8 @@
         <page name='Intro to Tutorial Challenges'/>
         <page name='Insertion Sort'/>
         <page name='Cut the Sticks'/>
+        <page name='Find 2nd Largest Value'/>
+        <page name='Reverse an Array'/>
+        <page name='Remove Duplicates'/>
     </pages>
 </playground>
