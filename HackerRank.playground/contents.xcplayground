@@ -20,5 +20,7 @@
         <page name='Find 2nd Largest Value'/>
         <page name='Reverse an Array'/>
         <page name='Remove Duplicates'/>
+        <page name='Examples'/>
+        <page name='Find Digits'/>
     </pages>
 </playground>

@@ -17,6 +17,7 @@ if array[0] > array[1] {
 for (var i = 2; i < array.count; i++)
 {
     if array[i] > firstLargest {
+        print(array[i])
         secondLargest = firstLargest
         firstLargest = array[i]
     } else if (array[i] < firstLargest && array[i] > secondLargest) {
@@ -24,5 +25,12 @@ for (var i = 2; i < array.count; i++)
     }
 }
 print(secondLargest)
+print(firstLargest)
 
 
+
+/*
+what is a singleton? a class restricted to one instantiation, usually used when you would use the class too many times otherwise and it becomes inefficient to have to keep making classes
+ KVO vs
+ 
+*/
